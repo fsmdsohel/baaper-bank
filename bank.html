@@ -11,45 +11,60 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- fontawesome link -->
+    <script src="https://kit.fontawesome.com/7e55d24a02.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
+    <div id="alert" class="alert hide">
+        <span class="fas fa-exclamation-circle"></span>
+        <span id="msg" class="msg">Warning: This is a wraning alert</span>
+        <span id="close-btn" class="close-btn">
+            <span class="fas fa-times"></span>
+        </span>
+    </div>
 
-    <section class="max-w-5xl flex flex-col min-h-screen justify-center px-5 mx-auto">
-        <h1 class="text-center text-6xl">Let's get some <span class="text-purple-500">Mooooney</span>!!!</h1>
-        <div class="grid grid-cols-3 gap-5 my-10">
-            <div class="bg-blue-400 text-white p-10 rounded-lg">
-                <h1 class="text-4xl">Deposit</h1>
-                <h2 class="text-6xl">$<span id="deposit-total">00</span></h2>
-            </div>
-            <div class="bg-green-400 text-white p-10 rounded-lg">
-                <h1 class="text-4xl">Withdraw</h1>
-                <h2 class="text-6xl">$<span id="withdraw-total">00</span></h2>
-            </div>
-            <div class="bg-yellow-400 text-white p-10 rounded-lg">
-                <h1 class="text-4xl">Balance</h1>
-                <h2 class="text-6xl">$<span id="balance-total">00</span></h2>
-            </div>
-        </div>
-        <div class="grid grid-cols-2 gap-5">
-            <div class="p-10 bg-red-200 rounded-lg">
-                <h1 class="text-3xl mb-5">Please Deposit</h1>
-                <input id="deposit-amount" class="border border-red-300 shadow p-3 w-full rounded-lg mb-" type="text"
-                    placeholder="$ amount you want to deposit">
-                <button id="deposit-btn"
-                    class="text-lg font-medium rounded-lg my-3 py-3 px-8 bg-red-500 text-white block">Deposit</button>
-            </div>
-            <div class="p-10 bg-blue-200 rounded-lg">
-                <h1 class="text-3xl mb-5">Please Withdraw</h1>
-                <input id="withdraw-amount" class="border border-blue-300 shadow p-3 w-full rounded-lg mb-" type="text"
-                    placeholder="$ amount you want to withdraw">
-                <button id="withdraw-btn"
-                    class="text-lg font-medium rounded-lg my-3 py-3 px-8 bg-blue-500 text-white block">Withdraw</button>
-            </div>
-        </div>
-    </section>
 
+    <main class="bg-gradient-to-tr from-purple-500 to-pink-600">
+        <section class="max-w-5xl flex flex-col min-h-screen justify-center px-5 mx-auto py-10">
+            <h1 class="text-center text-6xl text-white">Let's get some <span class="text-green-400">Mooooney</span>!!!
+            </h1>
+            <div class="grid grid-cols-3 gap-5 my-10">
+                <div class="bg-blue-500 text-white p-10 rounded-lg">
+                    <h1 class="text-4xl">Deposit</h1>
+                    <h2 class="text-6xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-green-500 text-white p-10 rounded-lg">
+                    <h1 class="text-4xl">Withdraw</h1>
+                    <h2 class="text-6xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-yellow-500 text-white p-10 rounded-lg">
+                    <h1 class="text-4xl">Balance</h1>
+                    <h2 class="text-6xl">$<span id="balance-total">00</span></h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-5">
+                <div class="p-10 bg-red-400 rounded-lg">
+                    <h1 class="text-3xl mb-5 text-white">Please Deposit</h1>
+                    <input id="deposit-amount" class="border border-red-300 shadow p-3 w-full rounded-lg mb-"
+                        type="text" placeholder="$ amount you want to deposit">
+                    <button id="deposit-btn" class="text-lg font-medium rounded-lg my-3 py-3 px-8 bg-purple-500 text-white block bg-gradient-to-r
+                    from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">Deposit</button>
+                </div>
+                <div class="p-10 bg-pink-500 rounded-lg">
+                    <h1 class="text-3xl mb-5 text-white">Please Withdraw</h1>
+                    <input id="withdraw-amount" class="border border-blue-300 shadow p-3 w-full rounded-lg mb-"
+                        type="text" placeholder="$ amount you want to withdraw">
+                    <button id="withdraw-btn" class="text-lg font-medium rounded-lg my-3 py-3 px-8 text-white block bg-gradient-to-r
+                    from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <!-- banking js -->
     <script src="./js/banking.js"></script>
 

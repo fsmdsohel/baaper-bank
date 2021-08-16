@@ -8,6 +8,6 @@ document.addEventListener("submit", function (event) {
     userEmail.value == "fsmdsohelrana@gmail.com" &&
     userPass.value == "user@pass"
   ) {
-    window.location = "bank.html";
+    window.location.href = "bank.html";
   }
 });
